@@ -1,0 +1,72 @@
+<!-- Home page for Summit Roast Inventory Manager -->
+<!-- Extends defaultTemplate.html for consistent navigation and layout -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layouts/defaultTemplate}">
+
+<head>
+	<title>Home - Summit Roast Inventory Manager</title>
+	<style>
+		.welcome-container {
+			max-width: 600px;
+			margin: 5rem auto;
+			padding: 3rem;
+			background: #F1F5F2;
+			border-radius: 16px;
+			box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+			text-align: center;
+		}
+
+		h1 {
+			font-family: 'Playfair Display', serif;
+			color: #1B3B2B;
+			margin-bottom: 1rem;
+		}
+
+		p {
+			font-family: 'DM Sans', sans-serif;
+			color: #5D7065;
+			margin-bottom: 2rem;
+		}
+
+		.btn-custom {
+			display: block;
+			margin: 0 auto 12px auto;
+			max-width: 220px;
+			padding: 12px 30px;
+			border-radius: 8px;
+			font-weight: 500;
+			text-decoration: none;
+		}
+
+		.btn-primary-custom {
+			background: #1B3B2B;
+			color: #F1F5F2;
+		}
+
+		.btn-primary-custom:hover {
+			background: #2D5A43;
+			color: #F1F5F2;
+		}
+
+		.btn-secondary-custom {
+			background: #4E8766;
+			color: #F1F5F2;
+		}
+	</style>
+</head>
+
+<body>
+	<div layout:fragment="content">
+		<div class="welcome-container">
+			<h1>Summit Roast Inventory Manager</h1>
+			<p>Welcome to the Summit Roast Asset and Inventory Management System. Get started by adding products to your inventory.</p>
+			<div>
+				<a th:href="@{/product/create}" class="btn-custom btn-primary-custom">Add Product</a>
+				
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
