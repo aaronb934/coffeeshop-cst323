@@ -5,4 +5,4 @@ handlers:
 manual_scaling:
   instances: 1
 env_variables:
-  DB_URL: "jdbc:mysql://google/coffeeshop?socketFactory=com.google.cloud.sql.mysql.SocketFactory&cloudSqlInstance=coffeeshop-cst323:us-east1:coffeeshop-db-google"
+  SPRING_DATASOURCE_URL: "jdbc:mysql:///coffeeshop?cloudSqlInstance=coffeeshop-cst323:us-east1:coffeeshop-db-google&socketFactory=com.google.cloud.sql.mysql.SocketFactory"
